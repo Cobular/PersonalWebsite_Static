@@ -65,7 +65,7 @@ export function Age() {
             1,
             1
         );
-        return `${ageYearsComponent} and ${target_n}/${target_d}`;
+        return `${ageYearsComponent} ${target_n}/${target_d}`;
     }
 
     const millisecondsYear = milliseconds_year();

@@ -34,7 +34,7 @@ export function Footer() {
       </div>
       <hr />
       <div className="copyright-text">
-        Copyright &copy; 2020 All Rights Reserved by Jake Cover
+        Copyright &copy; 2021 All Rights Reserved by Jake Cover
       </div>
     </footer>
   );
