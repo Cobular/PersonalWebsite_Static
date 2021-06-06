@@ -21,9 +21,9 @@ export function AboutMe() {
             <h2> A bit about me:</h2>
 
             <ul>
-              <li>
-                <b>Name</b>: Jake Cover
-              </li>
+              {/*<li>*/}
+              {/*  <b>Pronouns</b>: He/Him*/}
+              {/*</li>*/}
               <li>
                 <b>Occupation:</b> Student
               </li>
