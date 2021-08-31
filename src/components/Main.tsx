@@ -6,11 +6,7 @@ import { Resume } from "./Resume";
 export function Main() {
   return (
     <main>
-      <Switch>
-        <Route exact={true} path={"/"} component={Home} />
-        <Route path={"/contact"} component={Contact} />
-        <Route path={"/resume"} component={Resume} />
-      </Switch>
+      <Home />
     </main>
   );
 }
