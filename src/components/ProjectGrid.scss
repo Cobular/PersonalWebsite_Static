@@ -18,12 +18,21 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
   margin: 10px;
 
   @include media(">=medium")  {
+    width: 95%;
+    margin: auto;
+  }
+
+  @include media(">=large")  {
     width: 90%;
     margin: auto;
   }
 
-
   @include media(">=x-large")  {
+    width: 85%;
+    margin: auto;
+  }
+
+  @include media(">=xx-large")  {
     width: 80%;
     max-width: 1900px;
     margin: auto;
@@ -45,7 +54,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
     h2 {
       margin-bottom: 0;
       font-family: "Fira Code", monospace;
-      font-size: 24px;
+      font-size: 30px;
     }
 
     p {
