@@ -288,18 +288,6 @@ export function ProjectGrid() {
             }
             link={"https://event.codeday.org/sandiego"}
           />
-          <SmallElementPic
-              image_url={KatSite}
-              image_alt={"Kat's Logo"}
-              title={"Shushicate"}
-              org={"Random Projects"}
-              text={
-                `An art gallery website for my friend, made in svelte. The images are optimized and compressed at 
-                compiletime, creating a few versions and allowing the browser to choose which to display using imageset.
-                 The full resolution image is only sent when selecting an image, keeping the site performant.`
-              }
-              link={"https://www.shushicate.com/"}
-          />
           <LargeElementPic
             image_url={Foresight}
             image_alt={"Foresight Sports Logo"}
@@ -321,6 +309,17 @@ export function ProjectGrid() {
             link={"https://github.com/JakeCover/ScoreSaverExtention"}
           />
 
+          <SmallElement
+              title={"Assorted Discord Bots"}
+              org={"Random Projects"}
+              text={
+                `I've made quite a number of discord bots over time! Some of them, like ReplyBot, which added a reply
+              functionality to Discord years before they finally implemented it first-party, have been obsoleted
+              nowadays, others like DiscordChannelMirror really aren't significantly notable, and many more have been
+              lost to time and past me's lack of understanding of the importance of backup. I digress, however I really
+               do love writing these sorts of applications!`
+              }
+          />
           <MediumElement
             image_url={Hashicorp}
             image_alt={"HashiCorp Logo"}
@@ -352,16 +351,17 @@ export function ProjectGrid() {
               networking configuration across many jobs easily.`
             }
           />
-          <SmallElement
-            title={"Assorted Discord Bots"}
-            org={"Random Projects"}
-            text={
-              `I've made quite a number of discord bots over time! Some of them, like ReplyBot, which added a reply
-              functionality to Discord years before they finally implemented it first-party, have been obsoleted
-              nowadays, others like DiscordChannelMirror really aren't significantly notable, and many more have been
-              lost to time and past me's lack of understanding of the importance of backup. I digress, however I really
-               do love writing these sorts of applications!`
-            }
+          <SmallElementPic
+              image_url={KatSite}
+              image_alt={"Kat's Logo"}
+              title={"Shushicate"}
+              org={"Random Projects"}
+              text={
+                `An art gallery website for my friend, made in svelte. The images are optimized and compressed at 
+                compiletime, creating a few versions and allowing the browser to choose which to display using imageset.
+                 The full resolution image is only sent when selecting an image, keeping the site performant.`
+              }
+              link={"https://www.shushicate.com/"}
           />
           <SmallElement
             title={"OVRTools"}
