@@ -13,5 +13,6 @@
     <orderEntry type="library" name="jquery-3.5.0" level="application" />
     <orderEntry type="library" name="masonry-layout" level="application" />
     <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="umami" level="application" />
   </component>
 </module>

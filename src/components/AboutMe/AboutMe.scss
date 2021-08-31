@@ -10,7 +10,7 @@
   }
 
   .about-me-card {
-    background: var(--about-me);
+    //background: var(--about-me);
     border-radius: 5px;
     margin: 0 5px 0;
     padding: 10px;
@@ -18,31 +18,24 @@
   }
 
   #about-me {
-    background: var(--about-me);
+    //background: var(--about-me);
     border-radius: 5px;
     padding: 15px;
     width: fit-content;
 
     #info-parent {
-      display: flex;
-      flex-direction: row;
-
-      #specific-info {
-        flex: 1 1 0;
-      }
-
-      #fun-info {
-        flex: 1 1 0;
-      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
       @media screen and (max-width: 660px) {
-        flex-direction: column;
+        grid-template-columns: 1fr;
       }
     }
 
     h1 {
       font-family: "Fira Code", monospace;
       font-weight: 500;
+      font-size: 46px;
     }
 
     h2 {

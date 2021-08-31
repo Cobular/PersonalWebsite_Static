@@ -1,6 +1,6 @@
 @import "~include-media/dist/_include-media.scss";
 
-$breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-large: 1560px);
+$breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-large: 1560px, xx-large: 1900px);
 
 // Override Sass min()
 @function min($numbers...) {
@@ -13,9 +13,22 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-lar
 }
 
 #project-grid-parent {
-  margin: 10px;
   background: var(--grid-background);
   border-radius: 5px;
+  margin: 10px;
+
+  @include media(">=medium")  {
+    width: 90%;
+    margin: auto;
+  }
+
+
+  @include media(">=x-large")  {
+    width: 80%;
+    max-width: 1900px;
+    margin: auto;
+  }
+
 
   & > #project-header {
     background: var(--grid-header-background);
@@ -50,13 +63,13 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-lar
   //padding: 10px;
 
   @include media("<=x-small") {
-    .GridSizer, .OneWide, .FourByOne .Medium {
+    .GridSizer, .OneWide, .FourByOne, .Medium {
       width: 100%;
     }
   }
 
   @include media(">x-small", "<small") {
-    .GridSizer, .OneWide .Medium {
+    .GridSizer, .OneWide, .Medium {
       width: 49%;
     }
     .FourByOne {
@@ -65,11 +78,11 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-lar
   }
 
   @include media(">=small", "<medium") {
-    .GridSizer, .OneWide .Medium {
+    .GridSizer, .OneWide, .Medium {
       width: 33%;
     }
     .FourByOne {
-      width: 99%;
+      width: 66%;
     }
   }
 
@@ -100,15 +113,27 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-lar
     }
   }
 
-  @include media(">=x-large") {
+  @include media(">=x-large", "<xx-large") {
     .GridSizer, .OneWide {
-      width: 300px;
+      width: 20%;
     }
     .Medium {
-      width: 600px;
+      width: 40%;
     }
     .FourByOne {
-      width: 900px;
+      width: 60%;
+    }
+  }
+
+  @include media(">=xx-large") {
+    .GridSizer, .OneWide {
+      width: 16.6%;
+    }
+    .Medium {
+      width: 33%;
+    }
+    .FourByOne {
+      width: 49.8%;
     }
   }
 }
@@ -206,6 +231,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-lar
   @include media(">x-large") {
     .image {
       width: 40%;
+      padding-right: 10px;
     }
   }
 }
@@ -229,11 +255,11 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 900px, large: 1300px, x-lar
       width: 30ch;
     }
 
-    @include media(">small") {
+    @include media(">medium") {
       flex-direction: row;
 
     }
-    @include media("<=small") {
+    @include media("<=medium") {
       flex-direction: column;
       .description {
         width: 95%;

@@ -19,6 +19,9 @@ import Foresight from "../images/foresightsports.png";
 import Distest from "../images/distest.svg";
 import Scoresaver from "../images/scoresaver.svg";
 import Hashicorp from "../images/HashiCorp_Logo_no_text.png";
+import Bennu from "../images/bennu.gif";
+import KatSite from "../images/kat-site.png";
+
 
 type GridElementImageProps = {
   image_url: string;
@@ -231,7 +234,7 @@ export function ProjectGrid() {
   });
 
   return (
-    <div>
+    <div style={{paddingBottom: 20}}>
       <div id={"project-grid-parent"}>
         <div id={"project-header"}>
           <h2>&lt;/&gt; My Projects</h2>
@@ -246,31 +249,33 @@ export function ProjectGrid() {
             title={"ElaticMatch"}
             org={"CodeDay"}
             text={
-              `A set of tools, including a custom suggestion and weighting system, as well as a custom matching 
-              algorithm that I wrote and used to match around 350 students to the best-fitting mentors in the CodeDay 
+              `A set of tools, including a custom suggestion and weighting system, as well as a custom matching
+              algorithm that I wrote and used to match around 350 students to the best-fitting mentors in the CodeDay
               Labs summer internship program in 2020.`
             }
             link={"https://github.com/codeday/labs-elastic-match"}
           />
+
+
           <SmallElement
             title={"John Peter"}
             org={"CodeDay"}
             text={
-              `John Peter is a Discord bot used for moderation and server management for Virtual CodeDay. It has a very 
+              `John Peter is a Discord bot used for moderation and server management for Virtual CodeDay. It has a very
               xtensive featureset, and has been used for multiple CodeDays and has worked with over 1000 students.`
             }
             link={"https://github.com/codeday/johnpeter-discord"}
           />
           <SmallElement
-            title={"CopyMoji"}
-            org={"BetterDiscord"}
-            text={
-              `An extension for the alternate discord client BetterDiscord that changes the functionality of copying 
-              emoji to copy the actual emoji characters rather than their names from the discord client.`
-            }
-            link={
-              "https://github.com/JakeCover/BetterDiscordExtensions/tree/main/plugins/CopyMoji"
-            }
+              title={"Distest"}
+              org={"Random Projects"}
+              text={
+                `Distest is a testing library I wrote for Discord bots that allows for full integration tests of bots,
+              improving the discord bot development workflow significantly. As far as I know, it's the only tool
+              available for this sort of testing. Unfortunately, this has been deprecated in favor of other, more full
+              featured libraries.`
+              }
+              link={"https://github.com/JakeCover/distest"}
           />
           <SmallElementPic
             image_url={CodeDaySD}
@@ -278,31 +283,31 @@ export function ProjectGrid() {
             org={"CodeDay"}
             title={"CodeDay San Diego"}
             text={
-              `A 24 hour hackathon occurring around the world a few times a year. I volunteered for and then later ran 
+              `A 24 hour hackathon occurring around the world a few times a year. I volunteered for and then later ran
               the San Diego event.`
             }
             link={"https://event.codeday.org/sandiego"}
+          />
+          <SmallElementPic
+              image_url={KatSite}
+              image_alt={"Kat's Logo"}
+              title={"Shushicate"}
+              org={"Random Projects"}
+              text={
+                `An art gallery website for my friend, made in svelte. The images are optimized and compressed at 
+                compiletime, creating a few versions and allowing the browser to choose which to display using imageset.
+                 The full resolution image is only sent when selecting an image, keeping the site performant.`
+              }
+              link={"https://www.shushicate.com/"}
           />
           <LargeElementPic
             image_url={Foresight}
             image_alt={"Foresight Sports Logo"}
             title={"Foresight Sports"}
             text={
-              `Foresight Sports creates advanced augmented reality sports experiences. I created multiple games using 
+              `Foresight Sports creates advanced augmented reality sports experiences. I created multiple games using
               Unity that took data from their launch monitor technology and translated it into a seamless experience.`
             }
-          />
-          <SmallElementPic
-            image_url={Distest}
-            image_alt={"Distest Logo"}
-            title={"Distest"}
-            org={"Random Projects"}
-            text={
-              `Distest is a testing library I wrote for Discord bots that allows for full integration tests of bots, 
-              improving the discord bot development workflow significantly. As far as I know, it's the only tool 
-              available for this sort of testing.`
-            }
-            link={"https://github.com/JakeCover/distest"}
           />
           <SmallElementPic
             image_url={Scoresaver}
@@ -310,7 +315,7 @@ export function ProjectGrid() {
             title={"ScoreSaver"}
             org={"Random Projects"}
             text={
-              `A Chrome extension to help you download beatsaber songs directly from ScoreSaber. No more searching for 
+              `A Chrome extension to help you download BeatSaber songs directly from ScoreSaber. No more searching for
               mapper names on BeatSaver, just download the newest ranked songs directly!`
             }
             link={"https://github.com/JakeCover/ScoreSaverExtention"}
@@ -322,9 +327,9 @@ export function ProjectGrid() {
             title={"Hashicorp Stack Sysadmin"}
             org={"CodeDay, Random Projects"}
             text={
-              `I've setup and used a stack consisting of Nomad, Consul, and Vault along with Traefik both at CodeDay, 
-              where it runs almost every service we have, as well as at home, where I use it to run a number of 
-              assorted services on a few old machines. I strongly recommend it, it's very powerful and not all that 
+              `I've setup and used a stack consisting of Nomad, Consul, and Vault along with Traefik both at CodeDay,
+              where it runs almost every service we have, as well as at home, where I use it to run a number of
+              assorted services on a few old machines. I strongly recommend it, it's very powerful and not all that
               complex to get started with at any scale, from one personal server to large corporate backends.`
             }
           />
@@ -332,7 +337,7 @@ export function ProjectGrid() {
               title={"Personal Website"}
               org={"Random Projects"}
               text={
-                `You're looking at it! There's not a whole lot to this, it's just a React site hosted on GitHub Pages, 
+                `You're looking at it! There's not a whole lot to this, it's just a React site hosted on GitHub Pages,
                 but I didn't know React before starting on this so I'm pretty proud of it.`
               }
               link={"https://github.com/JakeCover/PersonalWebsite_Static"}
@@ -342,8 +347,8 @@ export function ProjectGrid() {
             link={"https://github.com/JakeCover/NomadJobTemplatesTool"}
             org={"Random Projects"}
             text={
-              `A little custom tool to allow you to use jinga-esque text substitutions in Nomad jobfiles to help 
-              centralize the definition of service traefik tags. This mainly makes it easier to update and change 
+              `A little custom tool to allow you to use jinga-esque text substitutions in Nomad jobfiles to help
+              centralize the definition of service traefik tags. This mainly makes it easier to update and change
               networking configuration across many jobs easily.`
             }
           />
@@ -351,9 +356,9 @@ export function ProjectGrid() {
             title={"Assorted Discord Bots"}
             org={"Random Projects"}
             text={
-              `I've made quite a number of discord bots over time! Some of them, like ReplyBot, which added a reply 
-              functionality to Discord years before they finally implemented it first-party, have been obsoleted 
-              nowadays, others like DiscordChannelMirror really aren't significantly notable, and many more have been 
+              `I've made quite a number of discord bots over time! Some of them, like ReplyBot, which added a reply
+              functionality to Discord years before they finally implemented it first-party, have been obsoleted
+              nowadays, others like DiscordChannelMirror really aren't significantly notable, and many more have been
               lost to time and past me's lack of understanding of the importance of backup. I digress, however I really
                do love writing these sorts of applications!`
             }
@@ -363,11 +368,36 @@ export function ProjectGrid() {
             org={"Random Projects"}
             link={"https://github.com/OVRTools"}
             text={
-              `This one's a bit more work in progress than some of the others here. It is a set of tools to help people 
-              develop OpenVR plugins more easily and independently from Unity. It will eventually grow to include 
+              `This one's a bit more work in progress than some of the others here. It is a set of tools to help people
+              develop OpenVR plugins more easily and independently from Unity. It will eventually grow to include
               multiple additional input methods and other tools to allow users to interact with other OVR plugins more
               easily.`
             }
+          />
+
+          <SmallElement
+              title={"CopyMoji"}
+              org={"BetterDiscord"}
+              text={
+                `An extension for the alternate discord client BetterDiscord that changes the functionality of copying
+              emoji to copy the actual emoji characters rather than their names from the discord client.`
+              }
+              link={
+                "https://github.com/JakeCover/BetterDiscordExtensions/tree/main/plugins/CopyMoji"
+              }
+          />
+          <MediumElement
+              image_url={Bennu}
+              image_alt={"A B logo"}
+              title={"Bennu"}
+              org={"Work Experience"}
+              text={
+                `Bennu made various engineering management and performance analysis tools for other software companies. 
+                Here, I mainly implemented the crawler for Jira Server, adding a whole new application we could offer to
+                customers. I also worked on internal tooling and optimized our test runtime by 50% before the startup 
+                closed from beneath me in the middle of the summer of 2021.`
+              }
+              link={"https://www.bennu.io/"}
           />
         </div>
       </div>
