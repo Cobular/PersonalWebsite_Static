@@ -41,7 +41,7 @@ function SmallElement({ title, text, link, org }: GridElementProps) {
   if (link === undefined) {
     return (
       <div className={"OneWide GridElement"}>
-        <div className={"GridElementInternal"}>
+        <div className={"GridElementInternal"} role={"gridcell"}>
           <div className={"title"}>
             <h2>{title}</h2>
             {org && <h3>{org}</h3>}
@@ -54,12 +54,13 @@ function SmallElement({ title, text, link, org }: GridElementProps) {
     );
   }
   return (
-    <div className={"OneWide GridElement"}>
+    <div className={"OneWide GridElement"} role={"gridcell"}>
       <a
         className={"Link GridElementInternal"}
         href={link}
         rel={"noreferrer"}
         target={"_blank"}
+        tabIndex={0}
       >
         <div className={"title"}>
           <h2>{title}</h2>
@@ -106,6 +107,7 @@ function SmallElementPic({
         href={link}
         target={"_blank"}
         rel={"noreferrer"}
+        tabIndex={0}
       >
         <div className={"image"}>
           <img src={image_url} alt={image_alt} />
@@ -151,6 +153,7 @@ function MediumElement({
       href={link}
       target={"_blank"}
       rel={"noreferrer"}
+      tabIndex={0}
     >
       <div className={"GridElementInternal"}>
         <div className={"image"}>
@@ -198,6 +201,7 @@ function LargeElementPic({
         href={link}
         target={"_blank"}
         rel={"noreferrer"}
+        tabIndex={0}
       >
         <div className={"image"}>
           <img src={image_url} alt={image_alt} />
@@ -233,15 +237,15 @@ export function ProjectGrid() {
 
   return (
     <div id={"project-grid-background"} style={{ paddingBottom: 20 }}>
-      <div id={"project-grid-parent"}>
-        <div id={"project-header"}>
+      <div id={"project-grid-parent"} aria-label={"My Projects"}>
+        <div id={"project-header"} aria-label={"Projects Header"}>
           <h2>&lt;/&gt; My Projects</h2>
           <p>
             A gallery of some of my most interesting projects. Look for{" "}
             <LinkOutlined />, click those projects for more information!
           </p>
         </div>
-        <div id={"project-grid"}>
+        <div id={"project-grid"} aria-label={"Projects Grid"}>
           <div className={"GridSizer"} />
           <SmallElement
             title={"ElaticMatch"}

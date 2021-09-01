@@ -164,10 +164,14 @@ $breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-la
 
     box-shadow: 0 1px 2px var(--grid-element-shadow);
     transition: box-shadow 0.2s ease-in-out;
-  }
 
-  .GridElementInternal:hover {
-    box-shadow: 0 2px 5px var(--grid-element-shadow);
+    &:hover {
+      box-shadow: 0 2px 5px var(--grid-element-shadow);
+    }
+
+    &:focus {
+      border: 2px solid lightblue;
+    }
   }
 
   h2 {
@@ -288,11 +292,13 @@ $breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-la
 
 .LinkIcon {
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: 16px;
+  top: 15px;
   font-size: 24px;
-  color: black;
 
   background: var(--chainlink-icon-background);
   border-radius: 5px;
+}
+svg {
+  fill: var(--chainlink-icon-color);
 }
