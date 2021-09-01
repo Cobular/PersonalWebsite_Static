@@ -259,7 +259,8 @@ export function ProjectGrid() {
             org={"CodeDay"}
             text={
               `John Peter is a Discord bot used for moderation and server management for Virtual CodeDay. It has a very
-              xtensive featureset, and has been used for multiple CodeDays and has worked with over 1000 students.`
+              extensive featureset with a number of custom moderation and authentication tools and has been used for 
+              multiple CodeDay events, impacting well over 1,000 students.`
             }
             link={"https://github.com/codeday/johnpeter-discord"}
           />
@@ -372,18 +373,6 @@ export function ProjectGrid() {
               easily.`
             }
           />
-
-          <SmallElement
-              title={"CopyMoji"}
-              org={"BetterDiscord"}
-              text={
-                `An extension for the alternate discord client BetterDiscord that changes the functionality of copying
-              emoji to copy the actual emoji characters rather than their names from the discord client.`
-              }
-              link={
-                "https://github.com/JakeCover/BetterDiscordExtensions/tree/main/plugins/CopyMoji"
-              }
-          />
           <MediumElement
               image_url={Bennu}
               image_alt={"A B logo"}
@@ -396,6 +385,17 @@ export function ProjectGrid() {
                 closed from beneath me in the middle of the summer of 2021.`
               }
               link={"https://www.bennu.io/"}
+          />
+          <SmallElement
+              title={"CopyMoji"}
+              org={"BetterDiscord"}
+              text={
+                `An extension for the alternate discord client BetterDiscord that changes the functionality of copying
+              emoji to copy the actual emoji characters rather than their names from the discord client.`
+              }
+              link={
+                "https://github.com/JakeCover/BetterDiscordExtensions/tree/main/plugins/CopyMoji"
+              }
           />
           <SmallElement
               title={"What's That Number"}
