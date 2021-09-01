@@ -307,7 +307,6 @@ export function ProjectGrid() {
             }
             link={"https://github.com/JakeCover/ScoreSaverExtention"}
           />
-
           <SmallElement
               title={"Assorted Discord Bots"}
               org={"Random Projects"}
@@ -326,9 +325,10 @@ export function ProjectGrid() {
             org={"CodeDay, Random Projects"}
             text={
               `I've setup and used a stack consisting of Nomad, Consul, and Vault along with Traefik both at CodeDay,
-              where it runs almost every service we have, as well as at home, where I use it to run a number of
-              assorted services on a few old machines. I strongly recommend it, it's very powerful and not all that
-              complex to get started with at any scale, from one personal server to large corporate backends.`
+              where it runs almost every service we have, as well as at home, where I use it to run over 25 services on
+              a cluster of old machines. I strongly recommend it as it's a very easy way utilize old hardware, even when
+              each machine may not be that powerful powerful and not all that complex to get started with at any scale,
+              from one personal server to large corporate backends.`
             }
           />
           <SmallElement

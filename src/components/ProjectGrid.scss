@@ -1,6 +1,6 @@
 @import "~include-media/dist/_include-media.scss";
 
-$breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-large: 1560px, xx-large: 1900px);
+$breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-large: 1560px, xx-large: 2000px);
 
 // Override Sass min()
 @function min($numbers...) {
@@ -21,25 +21,25 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
   margin: 10px;
   padding-left: 5px;
   padding-right: 5px;
-    //background: var(--grid-background);
+  //background: var(--grid-background);
 
 
-  @include media(">=medium")  {
+  @include media(">=medium") {
     width: 95%;
     margin: auto;
   }
 
-  @include media(">=large")  {
+  @include media(">=large") {
     width: 90%;
     margin: auto;
   }
 
-  @include media(">=x-large")  {
+  @include media(">=x-large") {
     width: 85%;
     margin: auto;
   }
 
-  @include media(">=xx-large")  {
+  @include media(">=xx-large") {
     width: 80%;
     max-width: 1900px;
     margin: auto;
@@ -76,8 +76,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
 
 #project-grid {
 
-  //padding: 10px;
-
+  margin: auto;
   @include media("<=x-small") {
     .GridSizer, .OneWide, .FourByOne, .Medium {
       width: 100%;
@@ -86,7 +85,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
 
   @include media(">x-small", "<small") {
     .GridSizer, .OneWide, .Medium {
-      width: 49%;
+      width: 49.5%;
     }
     .FourByOne {
       width: 100%;
@@ -95,10 +94,10 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
 
   @include media(">=small", "<medium") {
     .GridSizer, .OneWide, .Medium {
-      width: 33%;
+      width: 33.3%;
     }
     .FourByOne {
-      width: 66%;
+      width: 66.6%;
     }
   }
 
@@ -116,16 +115,13 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
 
   @include media(">=large", "<x-large") {
     .GridSizer, .OneWide {
-      max-width: 300px;
       width: 19.9%;
     }
     .Medium {
-      max-width: 600px;
       width: 39.8%;
     }
     .FourByOne {
       width: 59.5%;
-      max-width: 900px;
     }
   }
 
@@ -155,7 +151,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
 }
 
 .GridElement {
-  padding: 5px;
+  padding: 10px;
 
 
   .GridElementInternal {
