@@ -1,8 +1,6 @@
 :root {
   --text: white;
   --background: #1f2022;
-  --header: #84B7DB;
-  --footer: var(--header);
   --about-me: #F1F1F1;
   --grid-background: var(--background);
   --grid-header-background: var(--background);
@@ -11,9 +9,10 @@
   --grid-element-border: #6f6f6f;
   --grid-element-shadow: rgba(255, 255, 255, 0.3);
   --grid-element-header: rgb(169 162 228 / 100%);
-  --chainlink-icon-background: rgba(43, 43, 43, 0.3);
-  --link-color: var(--grid-element-header);
   --grid-element-subheader: darkgrey;
+  --chainlink-icon-background: rgba(43, 43, 43, 0.3);
+  --chainlink-icon-color: var(--grid-element-subheader);
+  --link-color: var(--grid-element-header);
 }
 
 

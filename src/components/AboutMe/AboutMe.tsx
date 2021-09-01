@@ -3,7 +3,6 @@ import { Tooltip } from "antd";
 import { Age } from "./Age";
 import { LastFmLi } from "./LastFmLi";
 
-
 export function AboutMe() {
   function EmailHandler() {
     const email = "Y29udGFjdEBqYWtlY292ZXIubWU=";
@@ -13,10 +12,10 @@ export function AboutMe() {
   return (
     <div id={"about-me-parent"}>
       <div id={"about-me"} className={"about-me-card"}>
-        <h1>Hi! I'm Jake!</h1>
+        <h1 aria-label={"Title"}>Hi! I'm Jake!</h1>
 
-        <div id={"info-parent"}>
-          <div id={"specific-info"}>
+        <div id={"info-parent"} aria-label={"About Me"}>
+          <div id={"specific-info"} aria-label={"Facts"}>
             <h2> A bit about me:</h2>
             <ul>
               <li>
@@ -32,7 +31,7 @@ export function AboutMe() {
               <LastFmLi />
             </ul>
           </div>
-          <div id={"fun-info"}>
+          <div id={"fun-info"} aria-label={"Contacts"}>
             <h2>Find Me:</h2>
             <ul>
               <li>
@@ -42,9 +41,10 @@ export function AboutMe() {
                 Twitter:{" "}
                 <Tooltip title={":("}>
                   <a
-                      href={"https://github.com/JakeCover"}
-                      target="_blank"
-                      rel="noreferrer"
+                    href={"https://twitter.com/cobular_"}
+                    target="_blank"
+                    rel="noreferrer"
+                    tabIndex={0}
                   >
                     @cobular_
                   </a>
@@ -53,9 +53,10 @@ export function AboutMe() {
               <li>
                 GitHub:{" "}
                 <a
-                    href={"https://github.com/JakeCover"}
-                    target="_blank"
-                    rel="noreferrer"
+                  href={"https://github.com/JakeCover"}
+                  target="_blank"
+                  rel="noreferrer"
+                  tabIndex={0}
                 >
                   JakeCover
                 </a>
@@ -63,9 +64,10 @@ export function AboutMe() {
               <li>
                 Telegram:{" "}
                 <a
-                    href={"https://t.me/cobular"}
-                    target="_blank"
-                    rel="noreferrer"
+                  href={"https://t.me/cobular"}
+                  target="_blank"
+                  rel="noreferrer"
+                  tabIndex={0}
                 >
                   @cobular
                 </a>
