@@ -1,5 +1,4 @@
 import "./AboutMe.scss";
-import { Link } from "react-router-dom";
 import { Tooltip } from "antd";
 import { Age } from "./Age";
 import { LastFmLi } from "./LastFmLi";
@@ -14,21 +13,20 @@ export function AboutMe() {
   return (
     <div id={"about-me-parent"}>
       <div id={"about-me"} className={"about-me-card"}>
-        <h1> Hi! I'm Jake!</h1>
+        <h1>Hi! I'm Jake!</h1>
 
         <div id={"info-parent"}>
           <div id={"specific-info"}>
             <h2> A bit about me:</h2>
-
             <ul>
-              {/*<li>*/}
-              {/*  <b>Pronouns</b>: He/Him*/}
-              {/*</li>*/}
               <li>
                 <b>Occupation:</b> Student
               </li>
               <li>
                 <b>Location:</b> Southern California
+              </li>
+              <li>
+                <b>Pronouns</b>: They/Them
               </li>
               <Age />
               <LastFmLi />

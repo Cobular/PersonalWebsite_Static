@@ -12,10 +12,17 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
   @return m#{a}x(#{$numbers});
 }
 
-#project-grid-parent {
+#project-grid-background {
   background: var(--grid-background);
+}
+
+#project-grid-parent {
   border-radius: 5px;
   margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+    //background: var(--grid-background);
+
 
   @include media(">=medium")  {
     width: 95%;
@@ -150,9 +157,13 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
 .GridElement {
   padding: 5px;
 
+
   .GridElementInternal {
     padding: 9px;
     border-radius: 5px;
+    border: var(--grid-element-border);
+    border-width: 2px;
+    border-style: solid;
     background: var(--grid-element-background);
 
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -167,6 +178,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
     font-family: "Fira Code", monospace;
     font-weight: 400;
     margin-bottom: 0px;
+    color: var(--grid-element-header);
     line-height: normal;
   }
 
@@ -179,7 +191,7 @@ $breakpoints: (x-small: 430px, small: 660px, medium: 1000px, large: 1300px, x-la
   p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    color: black;
+    color: var(--text);
     margin-bottom: 0;
   }
 }
