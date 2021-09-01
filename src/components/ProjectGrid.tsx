@@ -16,7 +16,6 @@ import { useEffect } from "react";
 import { LinkOutlined } from "@ant-design/icons";
 import CodeDaySD from "../images/SanDiego.svg";
 import Foresight from "../images/foresightsports.png";
-import Distest from "../images/distest.svg";
 import Scoresaver from "../images/scoresaver.svg";
 import Hashicorp from "../images/HashiCorp_Logo_no_text.png";
 import Bennu from "../images/bennu.gif";
@@ -234,7 +233,7 @@ export function ProjectGrid() {
   });
 
   return (
-    <div style={{paddingBottom: 20}}>
+    <div id={"project-grid-background"} style={{paddingBottom: 20}}>
       <div id={"project-grid-parent"}>
         <div id={"project-header"}>
           <h2>&lt;/&gt; My Projects</h2>
@@ -255,8 +254,6 @@ export function ProjectGrid() {
             }
             link={"https://github.com/codeday/labs-elastic-match"}
           />
-
-
           <SmallElement
             title={"John Peter"}
             org={"CodeDay"}
@@ -284,7 +281,8 @@ export function ProjectGrid() {
             title={"CodeDay San Diego"}
             text={
               `A 24 hour hackathon occurring around the world a few times a year. I volunteered for and then later ran
-              the San Diego event.`
+              the San Diego event where I grew to love hackathons and leaned a lot about leadership and event logistics
+              in the process!`
             }
             link={"https://event.codeday.org/sandiego"}
           />
@@ -315,7 +313,7 @@ export function ProjectGrid() {
               text={
                 `I've made quite a number of discord bots over time! Some of them, like ReplyBot, which added a reply
               functionality to Discord years before they finally implemented it first-party, have been obsoleted
-              nowadays, others like DiscordChannelMirror really aren't significantly notable, and many more have been
+              nowadays, others like DiscordChannelMirror just do simple things for my own use, and many more have been
               lost to time and past me's lack of understanding of the importance of backup. I digress, however I really
                do love writing these sorts of applications!`
               }
@@ -398,6 +396,20 @@ export function ProjectGrid() {
                 closed from beneath me in the middle of the summer of 2021.`
               }
               link={"https://www.bennu.io/"}
+          />
+          <SmallElement
+              title={"What's That Number"}
+              org={"Random Projects"}
+              text={
+                `A service that allows for the reversing of arbitrary decimals back to fractions of irrational numbers.
+                Basically, it's able to reverse 3.1415 to π, but more interestingly reverse 0.385694 to √2 * 3 / 11!
+                It can't solve all problems and it isn't mathematically provable or anything, but it's optimized to
+                give you the right answer for most things you'll actually run into and tell you when you've gotten 
+                nothing.`
+              }
+              link={
+                "https://jakecover.github.io/WhatsThatNumberExtension/"
+              }
           />
         </div>
       </div>

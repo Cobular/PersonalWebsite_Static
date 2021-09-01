@@ -16,6 +16,7 @@
     margin: 0 5px 0;
     padding: 10px;
     width: fit-content;
+    color: var(--text);
   }
 
   #about-me {
@@ -37,6 +38,7 @@
       font-family: "Fira Code", monospace;
       font-weight: 500;
       font-size: 46px;
+      color: var(--text);
     }
 
     h2 {
@@ -44,6 +46,7 @@
       line-height: normal;
       margin-bottom: 0;
       font-weight: 400;
+      color: var(--text);
 
       text-align: left;
     }
