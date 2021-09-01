@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebf1373e.chunk.css",
+    "main.css": "/static/css/main.72bbd05f.chunk.css",
     "main.js": "/static/js/main.a7d5696e.chunk.js",
     "main.js.map": "/static/js/main.a7d5696e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d39da719.js",
@@ -12,7 +12,7 @@
     "static/js/3.dd242330.chunk.js.map": "/static/js/3.dd242330.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.85610714.chunk.css.map": "/static/css/2.85610714.chunk.css.map",
-    "static/css/main.ebf1373e.chunk.css.map": "/static/css/main.ebf1373e.chunk.css.map",
+    "static/css/main.72bbd05f.chunk.css.map": "/static/css/main.72bbd05f.chunk.css.map",
     "static/js/2.18e12b66.chunk.js.LICENSE.txt": "/static/js/2.18e12b66.chunk.js.LICENSE.txt",
     "static/media/HashiCorp_Logo_no_text.344aecaa.png": "/static/media/HashiCorp_Logo_no_text.344aecaa.png",
     "static/media/SanDiego.35f8cc09.svg": "/static/media/SanDiego.35f8cc09.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.d39da719.js",
     "static/css/2.85610714.chunk.css",
     "static/js/2.18e12b66.chunk.js",
-    "static/css/main.ebf1373e.chunk.css",
+    "static/css/main.72bbd05f.chunk.css",
     "static/js/main.a7d5696e.chunk.js"
   ]
 }
