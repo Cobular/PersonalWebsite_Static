@@ -4,8 +4,8 @@
   --header: #84B7DB;
   --footer: var(--header);
   --about-me: #F1F1F1;
-  --grid-background: #1F1E33;
-  --grid-header-background: #1F1E33;
+  --grid-background: var(--background);
+  --grid-header-background: var(--background);
   --grid-header-text: #F1F1F1;
   --grid-element-background: #354560;
   --grid-element-border: #6f6f6f;
