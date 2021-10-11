@@ -58,7 +58,7 @@ export function AboutMe() {
                   rel="noreferrer"
                   tabIndex={0}
                 >
-                  JakeCover
+                  Cobular
                 </a>
               </li>
               <li>
