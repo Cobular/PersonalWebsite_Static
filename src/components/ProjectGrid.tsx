@@ -270,7 +270,7 @@ export function ProjectGrid() {
               improving the discord bot development workflow significantly. As far as I know, it's the only tool
               available for this sort of testing. Unfortunately, this has been deprecated in favor of other, more full
               featured libraries.`}
-            link={"https://github.com/JakeCover/distest"}
+            link={"https://github.com/Cobular/distest"}
           />
           <SmallElementPic
             image_url={CodeDaySD}
@@ -296,7 +296,7 @@ export function ProjectGrid() {
             org={"Random Projects"}
             text={`A Chrome extension to help you download BeatSaber songs directly from ScoreSaber. No more searching for
               mapper names on BeatSaver, just download the newest ranked songs directly!`}
-            link={"https://github.com/JakeCover/ScoreSaverExtention"}
+            link={"https://github.com/Cobular/ScoreSaverExtention"}
           />
           <SmallElement
             title={"Assorted Discord Bots"}
@@ -323,11 +323,11 @@ export function ProjectGrid() {
             org={"Random Projects"}
             text={`You're looking at it! There's not a whole lot to this, it's just a React site hosted on GitHub Pages,
                 but I didn't know React before starting on this so I'm pretty proud of it.`}
-            link={"https://github.com/JakeCover/PersonalWebsite_Static"}
+            link={"https://github.com/Cobular/PersonalWebsite_Static"}
           />
           <SmallElement
             title={"Nomad Job Templates Tool"}
-            link={"https://github.com/JakeCover/NomadJobTemplatesTool"}
+            link={"https://github.com/Cobular/NomadJobTemplatesTool"}
             org={"Random Projects"}
             text={`A little custom tool to allow you to use jinga-esque text substitutions in Nomad jobfiles to help
               centralize the definition of service traefik tags. This mainly makes it easier to update and change
@@ -369,7 +369,7 @@ export function ProjectGrid() {
             text={`An extension for the alternate discord client BetterDiscord that changes the functionality of copying
               emoji to copy the actual emoji characters rather than their names from the discord client.`}
             link={
-              "https://github.com/JakeCover/BetterDiscordExtensions/tree/main/plugins/CopyMoji"
+              "https://github.com/Cobular/BetterDiscordExtensions/tree/main/plugins/CopyMoji"
             }
           />
           <SmallElement
@@ -380,7 +380,7 @@ export function ProjectGrid() {
                 It can't solve all problems and it isn't mathematically provable or anything, but it's optimized to
                 give you the right answer for most things you'll actually run into and tell you when you've gotten 
                 nothing.`}
-            link={"https://jakecover.github.io/WhatsThatNumberExtension/"}
+            link={"https://Cobular.github.io/WhatsThatNumberExtension/"}
           />
         </div>
       </div>
