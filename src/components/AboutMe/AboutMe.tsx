@@ -5,14 +5,14 @@ import { LastFmLi } from "./LastFmLi";
 
 export function AboutMe() {
   function EmailHandler() {
-    const email = "Y29udGFjdEBqYWtlY292ZXIubWU=";
+    const email = "Y29udGFjdEBjb2J1bGFyLmNvbQ==";
     window.prompt("Thanks for being a human! Here's my email:", atob(email));
   }
 
   return (
     <div id={"about-me-parent"}>
       <div id={"about-me"} className={"about-me-card"}>
-        <h1 aria-label={"Title"}>Hi! I'm Jake!</h1>
+        <h1 aria-label={"Title"}>Hi! I'm Julie!</h1>
 
         <div id={"info-parent"} aria-label={"About Me"}>
           <div id={"specific-info"} aria-label={"Facts"}>
@@ -25,7 +25,7 @@ export function AboutMe() {
                 <b>Location:</b> Southern California
               </li>
               <li>
-                <b>Pronouns</b>: They/Them
+                <b>Pronouns</b>: She/Her
               </li>
               <Age />
               <LastFmLi />
@@ -53,7 +53,7 @@ export function AboutMe() {
               <li>
                 GitHub:{" "}
                 <a
-                  href={"https://github.com/JakeCover"}
+                  href={"https://github.com/Cobular"}
                   target="_blank"
                   rel="noreferrer"
                   tabIndex={0}
@@ -64,7 +64,7 @@ export function AboutMe() {
               <li>
                 Telegram:{" "}
                 <a
-                  href={"https://t.me/cobular"}
+                  href={"https://t.me/codular"}
                   target="_blank"
                   rel="noreferrer"
                   tabIndex={0}

@@ -1,25 +1,45 @@
 {
-  "short_name": "jakecover.me",
-  "name": "Jake Cover's Personal Website",
+  "short_name": "cobular.com",
+  "name": "Julie Cover's Personal Website",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "256x256 128x128 64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "favicon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-180.png",
+      "sizes": "180x180d",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1f2022",
+  "background_color": "#1f2022"
 }
