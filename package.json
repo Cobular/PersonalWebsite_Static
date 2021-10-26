@@ -48,7 +48,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://jakecover.me",
+  "homepage": "https://cobular.com",
   "name": "personal-website-static",
   "private": true,
   "scripts": {
