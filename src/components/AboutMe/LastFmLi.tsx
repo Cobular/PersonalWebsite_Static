@@ -1,61 +1,79 @@
-import {useEffect, useState} from "react";
-import axios from "axios";
+import { useEffect, useState } from "react";
 
 interface NowPlayingData {
-    introduction: string;
-    lastfm: {
-        artist: string;
-        track: string;
-        playing: boolean;
-        url: string | undefined;
-    };
+  artist: string;
+  track: string;
+  playing: boolean;
+  url: string | undefined;
 }
 
 export function LastFmLi() {
-    const [nowPlayingData, setNowPlayingData] = useState<NowPlayingData>({
-        introduction: "",
-        lastfm: {
-            artist: "nobody",
-            playing: false,
-            track: "nothing",
-            url: undefined,
-        },
-    });
+  const [nowPlayingData, setNowPlayingData] = useState<NowPlayingData>({
+    artist: "nobody",
+    playing: false,
+    track: "nothing",
+    url: undefined,
+  });
 
-    async function updateNowPlaying() {
-        try {
-            const songRequestData = await axios.get("https://api.jakecover.me");
-
-            setNowPlayingData(songRequestData.data);
-        } catch (err) {
-            console.error(err);
+  async function updateNowPlaying() {
+    try {
+      const songRequestData = await fetch("https://api.cobular.com/graphql", {
+        body: JSON.stringify({
+          query: `
+query {
+  nowPlaying {
+    track {
+      ... on Track {
+        title
+        artists {
+          name
         }
+        link
+      }
     }
+  }
+}
 
-    useEffect(() => {
-        updateNowPlaying();
-
-        const interval = setInterval(updateNowPlaying, 10000);
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
-
-    if (nowPlayingData.lastfm.playing) {
-        return (
-            <li>
-                <a
-                    href={nowPlayingData.lastfm.url}
-                    target={"_blank"}
-                    rel="noreferrer"
-                    style={{color: "inherit", textDecoration: "inherit"}}
-                >
-                    listening to {nowPlayingData.lastfm.track} by{" "}
-                    {nowPlayingData.lastfm.artist}
-                </a>
-            </li>
-        );
+      `,
+        }),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          Dnt: "1",
+        },
+        method: "POST",
+      });
+      const data: any = await songRequestData.json();
+      setNowPlayingData({
+        playing: true,
+        artist: data["data"]["nowPlaying"]["track"]["artists"][0]["name"],
+        track: data["data"]["nowPlaying"]["track"]["title"],
+        url: data["data"]["nowPlaying"]["track"]["link"],
+      });
+    } catch (err) {
+      console.error(err);
     }
-    return <li>not listening to anything right now.</li>;
+  }
+
+  useEffect(() => {
+    updateNowPlaying();
+
+    const interval = setInterval(updateNowPlaying, 10000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  if (nowPlayingData.playing) {
+    return (
+      <li id={"now-playing"}>
+        listening to{" "}
+        <a href={nowPlayingData.url} target={"_blank"} rel="noreferrer">
+          {nowPlayingData.track} by {nowPlayingData.artist}
+        </a>
+      </li>
+    );
+  }
+  return <li>not listening to anything right now. <br/></li>;
 }
