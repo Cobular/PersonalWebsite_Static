@@ -29,7 +29,7 @@
     "imagesloaded": "^5.0.0",
     "include-media": "^1.4.10",
     "masonry-layout": "^4.2.2",
-    "node-sass": "^7.0.1",
+    "sass": "^1.52.2",
     "prettier": "^2.6.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
