@@ -1,30 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1b9e387.chunk.css",
-    "main.js": "/static/js/main.a06d7fb4.chunk.js",
-    "main.js.map": "/static/js/main.a06d7fb4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e615543c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e615543c.js.map",
-    "static/css/2.85610714.chunk.css": "/static/css/2.85610714.chunk.css",
-    "static/js/2.517bf9c9.chunk.js": "/static/js/2.517bf9c9.chunk.js",
-    "static/js/2.517bf9c9.chunk.js.map": "/static/js/2.517bf9c9.chunk.js.map",
-    "static/js/3.cd4cd2b8.chunk.js": "/static/js/3.cd4cd2b8.chunk.js",
-    "static/js/3.cd4cd2b8.chunk.js.map": "/static/js/3.cd4cd2b8.chunk.js.map",
+    "main.css": "/static/css/main.0d69657b.css",
+    "main.js": "/static/js/main.3c0c9f4e.js",
+    "static/js/787.ab2e46e6.chunk.js": "/static/js/787.ab2e46e6.chunk.js",
+    "static/media/kat-site.png": "/static/media/kat-site.d60ec83189bf9e1d65a0.png",
+    "static/media/bennu.gif": "/static/media/bennu.e9020d828aff66607ed0.gif",
+    "static/media/SanDiego.svg": "/static/media/SanDiego.35f8cc09ac67df52c282e02aaeb3f1bd.svg",
+    "static/media/HashiCorp_Logo_no_text.png": "/static/media/HashiCorp_Logo_no_text.344aecaa30ff420b2d25.png",
+    "static/media/scoresaver.svg": "/static/media/scoresaver.3f65e348c800bf5d953d154e01b14da2.svg",
     "index.html": "/index.html",
-    "static/css/2.85610714.chunk.css.map": "/static/css/2.85610714.chunk.css.map",
-    "static/css/main.b1b9e387.chunk.css.map": "/static/css/main.b1b9e387.chunk.css.map",
-    "static/js/2.517bf9c9.chunk.js.LICENSE.txt": "/static/js/2.517bf9c9.chunk.js.LICENSE.txt",
-    "static/media/HashiCorp_Logo_no_text.344aecaa.png": "/static/media/HashiCorp_Logo_no_text.344aecaa.png",
-    "static/media/SanDiego.35f8cc09.svg": "/static/media/SanDiego.35f8cc09.svg",
-    "static/media/bennu.e9020d82.gif": "/static/media/bennu.e9020d82.gif",
-    "static/media/kat-site.d60ec831.png": "/static/media/kat-site.d60ec831.png",
-    "static/media/scoresaver.3f65e348.svg": "/static/media/scoresaver.3f65e348.svg"
+    "main.0d69657b.css.map": "/static/css/main.0d69657b.css.map",
+    "main.3c0c9f4e.js.map": "/static/js/main.3c0c9f4e.js.map",
+    "787.ab2e46e6.chunk.js.map": "/static/js/787.ab2e46e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e615543c.js",
-    "static/css/2.85610714.chunk.css",
-    "static/js/2.517bf9c9.chunk.js",
-    "static/css/main.b1b9e387.chunk.css",
-    "static/js/main.a06d7fb4.chunk.js"
+    "static/css/main.0d69657b.css",
+    "static/js/main.3c0c9f4e.js"
   ]
 }
