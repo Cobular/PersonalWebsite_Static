@@ -54,7 +54,7 @@ export function Age() {
     }
 
     function CalcAge() {
-        let ageMs = new Date().getTime() - 1021004428000;
+        let ageMs = new Date().getTime() - 1021288800000;
         const yearMs = milliseconds_year();
         const ageYearsComponent = Math.floor(ageMs / yearMs);
         const ageSecondsComponent = Math.floor((ageMs % yearMs) / 1000);

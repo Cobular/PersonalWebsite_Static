@@ -66,11 +66,11 @@
     li {
       font-family: "Montserrat", sans-serif;
       font-size: 18px;
-      list-style-type: symbols("+");
+      list-style-type: symbols(">");
       list-style-position: inside;
     }
     li::-moz-list-bullet {
-      content: "+ ";
+      content: "> ";
     }
   }
 
