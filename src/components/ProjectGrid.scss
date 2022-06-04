@@ -202,9 +202,21 @@ $breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-la
   flex-direction: column;
   width: available;
 
+  .image {
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 225px;
+  }
+
   img {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  .GridElementInternal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -214,10 +226,18 @@ $breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-la
     margin-bottom: 5px;
   }
 
+  .image {
+    max-width: 225px;
+  }
+
   @include media("<medium") {
-    display: flex;
-    flex-direction: column;
-    width: available;
+    .GridElementInternal {
+      display: flex;
+      flex-direction: column;
+      width: available;
+      align-items: center;
+    }
+
 
     img {
       width: 100%;
@@ -299,6 +319,7 @@ $breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-la
   background: var(--chainlink-icon-background);
   border-radius: 5px;
 }
+
 svg {
   fill: var(--chainlink-icon-color);
 }
