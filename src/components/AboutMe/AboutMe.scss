@@ -26,11 +26,12 @@
     width: fit-content;
 
     #info-parent {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
 
       @media screen and (max-width: 660px) {
-        grid-template-columns: 1fr;
+        flex-direction: column;
       }
     }
 
