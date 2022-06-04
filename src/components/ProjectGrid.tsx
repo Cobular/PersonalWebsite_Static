@@ -248,7 +248,7 @@ export function ProjectGrid() {
         <div id={"project-grid"} aria-label={"Projects Grid"}>
           <div className={"GridSizer"} />
           <SmallElement
-            title={"ElaticMatch"}
+            title={"ElasticMatch"}
             org={"CodeDay"}
             text={`A set of tools, including a custom suggestion and weighting system, as well as a custom matching
               algorithm that I wrote and used to match around 350 students to the best-fitting mentors in the CodeDay
@@ -259,7 +259,7 @@ export function ProjectGrid() {
             title={"John Peter"}
             org={"CodeDay"}
             text={`John Peter is a Discord bot used for moderation and server management for Virtual CodeDay. It has a very
-              extensive featureset with a number of custom moderation and authentication tools and has been used for 
+              extensive feature-set with a number of custom moderation and authentication tools and has been used for 
               multiple CodeDay events, impacting well over 1,000 students.`}
             link={"https://github.com/codeday/johnpeter-discord"}
           />
@@ -380,6 +380,17 @@ export function ProjectGrid() {
                 It can't solve all problems and it isn't mathematically provable or anything, but it's optimized to
                 give you the right answer for most things you'll actually run into and tell you when you've gotten 
                 nothing.`}
+            link={"https://Cobular.github.io/WhatsThatNumberExtension/"}
+          />
+          <SmallElement
+            title={"FPGA Piano"}
+            org={"Classwork"}
+            text={`With two group-mates, I made a piano on the Nexys 3 FPGA 
+              that can play one octave of notes. We used what we'd learned 
+              throughout the quarter to sample a sign wave in a LUT at various 
+              frequencies as well as generate the clocks required to send sound
+               to an ADC over I2S. I learned a ton in this project, it was 
+               really fascinating overall!`}
             link={"https://Cobular.github.io/WhatsThatNumberExtension/"}
           />
         </div>
