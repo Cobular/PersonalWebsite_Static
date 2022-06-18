@@ -7,7 +7,6 @@
   --grid-header-text: #F1F1F1;
   --grid-element-background: hsl(218, 24%, 25%);
   --grid-element-border: hsl(218, 24%, 29%);
-  //--grid-element-border: #6f6f6f;
   --grid-element-shadow: rgba(255, 255, 255, 0.3);
   --grid-element-header: rgb(169 162 228 / 100%);
   --grid-element-subheader: darkgrey;
@@ -32,3 +31,19 @@
 //  --link-color: grey;
 //  --grid-element-subheader: #F7A8B8;
 //}
+
+body.gay {
+  --text: black;
+  --background: linear-gradient(45deg, #ff0018 8.33%, #ffa52c 8.33%, #ffa52c 16.67%, #ffff41 16.67%, #ffff41 25%, #008018 25%, #008018 33.33%, #0000f9 33.33%, #0000f9 41.67%, #86007d 41.67%, #86007d 50%, #ff0018 50%, #ff0018 58.33%, #ffa52c 58.33%, #ffa52c 66.67%, #ffff41 66.67%, #ffff41 75%, #008018 75%, #008018 83.33%, #0000f9 83.33%, #0000f9 91.67%, #86007d 91.67%, #86007d 100%);
+  --header: #55CDFC;
+  --footer: #55CDFC;
+  --about-me: #F7A8B8;
+  --grid-background: #F7A8B8;
+  --grid-header-background: #55CDFC;
+  --grid-header-text: black;
+  --grid-element-background: #FFFFFF;
+  --grid-element-border: var(--grid-element-background);
+  --chainlink-icon-background: rgba(224, 255, 255, 0.7);
+  --link-color: white;
+  --grid-element-subheader: #F7A8B8;
+}
