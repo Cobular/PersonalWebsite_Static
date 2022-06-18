@@ -1,6 +1,6 @@
 @import "~include-media/dist/_include-media.scss";
 
-$breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-large: 1560px, xx-large: 2000px);
+$breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-large: 1560px, xx-large: 2100px);
 
 // Override Sass min()
 @function min($numbers...) {
@@ -12,11 +12,9 @@ $breakpoints: (x-small: 520px, small: 760px, medium: 1100px, large: 1400px, x-la
   @return m#{a}x(#{$numbers});
 }
 
-#project-grid-background {
-  background: var(--grid-background);
-}
 
 #project-grid-parent {
+  background: var(--grid-background);
   border-radius: 5px;
   margin: 10px;
   padding-left: 5px;
