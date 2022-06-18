@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d842d0b9.css",
-    "main.js": "/static/js/main.40b5a488.js",
+    "main.css": "/static/css/main.781006e7.css",
+    "main.js": "/static/js/main.82354ec6.js",
     "static/js/787.ab2e46e6.chunk.js": "/static/js/787.ab2e46e6.chunk.js",
     "static/media/kat-site.png": "/static/media/kat-site.d60ec83189bf9e1d65a0.png",
     "static/media/bennu.gif": "/static/media/bennu.e9020d828aff66607ed0.gif",
@@ -9,12 +9,12 @@
     "static/media/HashiCorp_Logo_no_text.png": "/static/media/HashiCorp_Logo_no_text.344aecaa30ff420b2d25.png",
     "static/media/scoresaver.svg": "/static/media/scoresaver.3f65e348c800bf5d953d154e01b14da2.svg",
     "index.html": "/index.html",
-    "main.d842d0b9.css.map": "/static/css/main.d842d0b9.css.map",
-    "main.40b5a488.js.map": "/static/js/main.40b5a488.js.map",
+    "main.781006e7.css.map": "/static/css/main.781006e7.css.map",
+    "main.82354ec6.js.map": "/static/js/main.82354ec6.js.map",
     "787.ab2e46e6.chunk.js.map": "/static/js/787.ab2e46e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d842d0b9.css",
-    "static/js/main.40b5a488.js"
+    "static/css/main.781006e7.css",
+    "static/js/main.82354ec6.js"
   ]
 }
