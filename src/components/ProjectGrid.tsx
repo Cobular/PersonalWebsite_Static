@@ -20,6 +20,7 @@ import Scoresaver from "../images/scoresaver.svg";
 import Hashicorp from "../images/HashiCorp_Logo_no_text.png";
 import Bennu from "../images/bennu.gif";
 import KatSite from "../images/kat-site.png";
+import JPL from "../images/JPL.png";
 
 type GridElementImageProps = {
   image_url: string;
@@ -248,6 +249,26 @@ export function ProjectGrid() {
         <div id={"project-grid"} aria-label={"Projects Grid"}>
           <div className={"GridSizer"} />
           <SmallElement
+            title={"Azure Networking"}
+            org={"Microsoft"}
+            text={`Implemented a large scale distributed and streaming real-time clustering algorithm capable of 
+            processing the entire Azure Networking log stream on about 10 nodes. System is robust to system drift
+            through live human in the loop updates. Able to parse plaintext logs into clusters and automatically 
+            extract semantically meaningful tokens as part of a data processing pipeline that underpins Azure's
+            network reliability and performance.`}
+          />
+          <SmallElementPic
+            image_url={JPL}
+            image_alt={"JPL Logo - Red capital letters spelling JPL"}
+            title={"Aerie Mission Planning"}
+            org={"JPL"}
+            text={`I worked for JPL to develop Aerie UI, the next generation mission planning and execution stack
+            used for Europa Clipper and future missions. Worked on sequencing where I solved a fantastically complicated bug with some 
+            undocumented Monaco editor features, enabling new DSL features and corresponding lints in browser. One of my 
+            favorite bugs of all time - I'll be sure to write a blog post soon!`}
+            link={"https://ai.jpl.nasa.gov/public/projects/aerie/"}
+          />
+          <SmallElement
             title={"ElasticMatch"}
             org={"CodeDay"}
             text={`A set of tools, including a custom suggestion and weighting system, as well as a custom matching
@@ -316,7 +337,7 @@ export function ProjectGrid() {
               where it runs almost every service we have, as well as at home, where I use it to run over 25 services on
               a cluster of old machines. I strongly recommend it as it's a very easy way utilize old hardware, even when
               each machine may not be that powerful powerful and not all that complex to get started with at any scale,
-              from one personal server to large corporate backends.`}
+              from one personal server to large corporate backends. In 2024, this stack is still in use!`}
           />
           <SmallElement
             title={"Personal Website"}
