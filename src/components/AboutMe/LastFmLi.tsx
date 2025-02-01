@@ -67,13 +67,13 @@ query {
 
   if (nowPlayingData.playing) {
     return (
-      <li id={"now-playing"}>
+      <span id={"now-playing"}>
         listening to{" "}
         <a href={nowPlayingData.url} target={"_blank"} rel="noreferrer">
           {nowPlayingData.track} by {nowPlayingData.artist}
         </a>
-      </li>
+      </span>
     );
   }
-  return <li>not listening to anything right now. <br/></li>;
+  return <span>not listening to anything right now.</span>;
 }

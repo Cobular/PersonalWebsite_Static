@@ -16,26 +16,21 @@ export function AboutMe() {
 
         <div id={"info-parent"} aria-label={"About Me"}>
           <div id={"specific-info"} aria-label={"Facts"}>
-            <h2> A bit about me:</h2>
-            <ul>
-              <li>
-                <b>Occupation:</b> Student
-              </li>
-              <li>
-                <b>Location:</b> Southern California
-              </li>
-              <li>
-                <b>Pronouns</b>: She/Her
-              </li>
-              <Age />
-              <LastFmLi />
-            </ul>
+            <p>I'm a <b>Software Engineer</b> at <b>Microsoft</b><br />who keeps the cloud happy at <b>Azure Networking</b><br />and went to school at <b>UCLA</b> 🐻</p>
+            
+            <br></br>
+            <p>I'm <Age /> and <LastFmLi /></p>
+
+            <p style={{marginLeft: "4ch"}}>Thanks for stopping by!</p>
           </div>
           <div id={"fun-info"} aria-label={"Contacts"}>
             <h2>Find Me:</h2>
             <ul>
               <li>
                 Email: <button onClick={EmailHandler}>Click This</button>
+              </li>
+              <li>
+                Blog: <a href={"https://blog.cobular.com"}>blog.cobular.com</a>
               </li>
               <li>
                 Twitter:{" "}

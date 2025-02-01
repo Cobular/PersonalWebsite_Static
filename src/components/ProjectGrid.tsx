@@ -249,7 +249,14 @@ export function ProjectGrid() {
         <div id={"project-grid"} aria-label={"Projects Grid"}>
           <div className={"GridSizer"} />
           <SmallElement
-            title={"Azure Networking"}
+            title={"Azure Networking - SWE"}
+            org={"Microsoft"}
+            text={`Current position! Building tools that measure loss and detect anomalies in Azure's entire network
+              infrastructure. Solving outages in the physical network as they occur in realtime, keeping the foundation
+              of our cloud infrastructure purring along smoothly.`}
+          />
+          <SmallElement
+            title={"Azure Networking - Intern"}
             org={"Microsoft"}
             text={`Implemented a large scale distributed and streaming real-time clustering algorithm capable of 
             processing the entire Azure Networking log stream on about 10 nodes. System is robust to system drift
@@ -343,7 +350,7 @@ export function ProjectGrid() {
             title={"Personal Website"}
             org={"Random Projects"}
             text={`You're looking at it! There's not a whole lot to this, it's just a React site hosted on GitHub Pages,
-                but I didn't know React before starting on this so I'm pretty proud of it.`}
+                but I didn't know React before starting on this so I'm pretty proud of it. EDIT: It's been like six years and actually, this website sucks. I'll re-do it one day!`}
             link={"https://github.com/Cobular/PersonalWebsite_Static"}
           />
           <SmallElement

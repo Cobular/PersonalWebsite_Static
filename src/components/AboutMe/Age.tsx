@@ -96,5 +96,5 @@ export function Age() {
         };
     }, [memoizedCallbackUpdateAge]);
 
-    return <li>{age} years old</li>;
+    return <span>{age} years old</span>;
 }
